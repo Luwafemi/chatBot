@@ -1,0 +1,114 @@
+::placeholder {
+  font-style: italic;
+  padding-left: 10px;
+}
+
+.bot {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 90vh;
+  width: 85vw;
+  background-color: black;
+  border-radius: 20px;
+  box-shadow: 1px 2px 3px 10px #212529;
+  margin-top: 10px;
+}
+.profilePic {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  margin-top: 10px;
+  border-radius: 50%;
+  border: 2px solid white;
+  background-image: url("./chat_bot.jpg");
+  background-size: cover;
+  background-position: -6px -1px;
+}
+.video {
+  height: 20px;
+  width: 20px;
+  float: right;
+  margin-top: 20px;
+  margin-right: 15px;
+}
+.phone {
+  height: 14px;
+  width: 14px;
+  float: right;
+  margin-top: 22px;
+  margin-left: 10px;
+}
+.menu {
+  float: right;
+  height: 30px;
+  width: 30px;
+  margin-top: 15px;
+  margin-left: 10px;
+}
+.msgArea {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5px;
+}
+.box {
+  /* font-family: fantasy; */
+  display: inline-block;
+  border-radius: 10px;
+  padding: 2px 10px;
+  margin-bottom: 40px;
+  margin: 10px 3px;
+  /* background-color: rgb(255, 255, 255); */
+  box-shadow: 1px 2px 6px 2px #231f44;
+  max-width: 108%;
+  color: white;
+  word-wrap: break-word;
+}
+.sendmsgBox {
+  margin-top: auto;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.sendMsg {
+  width: 70%;
+  height: 30px;
+  background-color: white;
+  border-radius: 6px;
+  border: none;
+  margin-bottom: 4px;
+  padding-left: 9px;
+}
+.msgArea div:nth-child(2n) {
+  margin-left: auto;
+}
+/* .msgArea div:nth-child(2n) .box {
+  word-wrap: break-word;
+  max-width: 100%;
+} */
+.msgArea::-webkit-scrollbar {
+  width: 0px;
+  background-color: transparent;
+}
+.container-sm {
+  width: 100%;
+  padding-right: 0px;
+  padding-left: 0px;
+  margin-right: auto;
+  margin-left: auto;
+}
+/* Media Queries */
+@media (min-width: 768px) {
+  .bot{
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 380px) {
+  .bot{
+    min-height: 530px;
+    max-height: 580px;
+  }
+}
