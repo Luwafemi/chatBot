@@ -8,11 +8,9 @@
   flex-direction: column;
   justify-content: space-between;
   height: 90vh;
-  width: 85vw;
+  max-width: 320px;
   background-color: black;
   border-radius: 20px;
-  box-shadow: 1px 2px 3px 10px #212529;
-  margin-top: 10px;
 }
 .profilePic {
   display: inline-block;
@@ -22,7 +20,7 @@
   margin-top: 10px;
   border-radius: 50%;
   border: 2px solid white;
-  background-image: url("./chat_bot.jpg");
+  background-image: url("./images/chat_bot.jpg");
   background-size: cover;
   background-position: -6px -1px;
 }
@@ -55,16 +53,14 @@
   margin-bottom: 5px;
 }
 .box {
-  /* font-family: fantasy; */
   display: inline-block;
   border-radius: 10px;
   padding: 2px 10px;
-  margin-bottom: 40px;
   margin: 10px 3px;
-  /* background-color: rgb(255, 255, 255); */
-  box-shadow: 1px 2px 6px 2px #231f44;
+  background-color: whitesmoke;
   max-width: 108%;
-  color: white;
+  color: black;
+  padding: 10px;
   word-wrap: break-word;
 }
 .sendmsgBox {
@@ -84,10 +80,6 @@
 .msgArea div:nth-child(2n) {
   margin-left: auto;
 }
-/* .msgArea div:nth-child(2n) .box {
-  word-wrap: break-word;
-  max-width: 100%;
-} */
 .msgArea::-webkit-scrollbar {
   width: 0px;
   background-color: transparent;
@@ -99,15 +91,18 @@
   margin-right: auto;
   margin-left: auto;
 }
-/* Media Queries */
+/* Media Queries */ /* Media Queries */ /* Media Queries */
 @media (min-width: 768px) {
-  .bot{
-    margin-top: 20px;
+  body {
+    height: 100vh !important;
+  }
+  .bot {
+    max-width: 500px;
   }
 }
 
 @media (max-width: 380px) {
-  .bot{
+  .bot {
     min-height: 530px;
     max-height: 580px;
   }

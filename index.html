@@ -9,50 +9,76 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="./bootstrap.min.css" />
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css" />
     <link rel="stylesheet" href="./bot.css" />
   </head>
- 
-  <div class="container bot">
+  <body
+    style="
+      background-color: #000;
+      display: flex;
+      height: 92vh;
+      align-items: center;
+      justify-content: center;
+    "
+  >
+    <div class="container bot">
+      <div>
+        <div class="profilePic"></div>
+        <div
+          style="
+            color: white;
+            display: inline-block;
+            position: absolute;
+            margin-top: 20px;
+            margin-left: 10px;
+          "
+        >
+          ...
+        </div>
+        <img class="menu" src="./images/three-dots.png" alt="menu" />
+        <img class="phone" src="./images/phone.png" alt="call" />
+        <img class="video" src="./images/video.png" alt="video" />
+      </div>
 
-     <div>
-        <div class='profilePic' ></div>
-        <div style="color: white;display: inline-block;position: absolute;margin-top: 20px; margin-left: 10px;"> ... </div>
-        <img class="menu" src="./three-dots.png" alt="menu">
-        <img class="phone" src="./phone1.png" alt="call">
-        <img  class="video" src="./video1.png" alt="video">
-     </div>
+      <div
+        style="
+          background-color: #231f44;
+          height: 1px;
+          width: 100%;
+          margin-top: 5px;
+          margin-bottom: 4px;
+        "
+      ></div>
 
-     <div style="background-color:#231f44; height: 1px; width: 100%; margin-top: 5px;margin-bottom: 4px;"></div>
-
-
-     <div id="msgArea" class="msgArea">
-       <div style="max-width: 90%;">
-        <div class="box fadein" style="display: none;">
+      <div id="msgArea" class="msgArea">
+        <div style="max-width: 90%">
+          <div class="box fadein" style="display: none">
             Hello, nice to meet you!
-            <br/>
+            <br />
             My name's Luwafemi, and you are?
+          </div>
         </div>
       </div>
-      
-   </div>
-  
 
-    <form class="container-sm sendmsgBox" style="margin-left: 0px;">
-      <img src="./smiley.png" alt="emoji" style="width: 22px; height: 22px;"/>
-        <input class='sendMsg' placeholder="Type a message..."/>
-        <button type="submit" style="width: 48px; margin-bottom: 4px;" class="btn btn-success btn-sm send">send</button>
-        <!-- background-color: #0177ff;border-color: #0177ff; -->
-   </form>
+      <form class="container-sm sendmsgBox" style="margin-left: 0px">
+        <img
+          src="./images/smiley.png"
+          alt="emoji"
+          style="width: 22px; height: 22px"
+        />
+        <input class="sendMsg" placeholder="Type a message..." />
+        <button
+          type="submit"
+          style="width: 48px; margin-bottom: 4px"
+          class="btn btn-success btn-sm send"
+        >
+          send
+        </button>
+      </form>
+    </div>
 
-      
-  </div>
-  
-
-
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-  <script src="./bootstrap.bundle.min.js"></script>
-  <script src="./bot.js"></script>
-
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./bot.js" type="module"></script>
   </body>
 </html>
